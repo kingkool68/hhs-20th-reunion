@@ -1,0 +1,7 @@
+{
+    "name": "kingkool68/hhs-20th-reunion",
+    "description": "A website for Hammond High School's 20th reunion",
+    "require": {
+        "spatie/calendar-links": "^1.8"
+    }
+}

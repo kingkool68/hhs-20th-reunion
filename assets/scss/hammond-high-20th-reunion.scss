@@ -1,0 +1,252 @@
+@import 'base/_functions.scss';
+@import 'base/_colors.scss';
+@import 'base/_reset.scss';
+
+@import 'components/_accessibility.scss';
+@import 'components/_svg.scss';
+
+$display-font : 'Bungee Shade',
+'Inter',
+sans-serif;
+$sans-serif-font : 'Inter',
+sans-serif;
+
+html {
+    // background-color: $white;
+    // background-color: #F2C203;
+}
+
+body {
+    background-color: $gold;
+    color: $black;
+    font-family: $sans-serif-font;
+    font-weight: 500;
+    font-size: rem(24px);
+
+    display: flex;
+    flex-direction: column;
+    margin: rem(32px);
+    min-height: calc(100dvh - 64px);
+}
+
+::selection {
+    background-color: $maroon;
+    color: $gold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: $blue;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}
+
+h1,
+h2,
+h3 {
+    font-family: $display-font;
+    color: $maroon;
+}
+
+h1 {
+    font-size: rem(56px);
+}
+
+h2 {
+    font-size: rem(32px);
+}
+
+.site-title {
+    span {
+        display: block;
+    }
+
+    sup {
+        font-size: 50%;
+        position: relative;
+        top: -0.45em;
+        padding: 0 0 0 0.1em;
+    }
+}
+
+.class-of {
+    background-color: $maroon;
+    color: $gold;
+    font-weight: 900;
+    width: rem(64px);
+    height: rem(64px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    padding: rem(32px) rem(32px);
+}
+
+main {
+    padding: rem(64px) rem(32px);
+}
+
+.blocks {
+    display: flex;
+    flex-direction: column;
+    max-width: rem(1024px);
+    margin: 0 auto;
+}
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    >* {
+        flex: 0 1 50%;
+    }
+
+    &.block--right {
+        flex-direction: row-reverse;
+    }
+
+    .block-label {
+        background-color: $maroon;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        min-height: rem(500px);
+
+        ::selection {
+            background-color: $gold;
+            color: $maroon;
+        }
+
+        .icon {
+            font-size: rem(64px);
+            color: $gold;
+        }
+
+        h2 {
+            color: $gold;
+            font-size: rem(48px);
+        }
+    }
+
+    .block-content {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.list-label {
+    text-transform: uppercase;
+    font-size: rem(13px);
+    text-align: center;
+    font-weight: 700;
+    color: $maroon;
+    padding-top: rem(32px);
+}
+
+.icon-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        display: block;
+        padding: rem(16px);
+        font-size: rem(32px);
+        filter: grayscale(100%);
+        opacity: 0.7;
+        transition: filter 320ms, background-color 320ms, opacity 320ms;
+
+        &:hover,
+        &:focus {
+            filter: grayscale(0);
+            background-color: $white;
+            opacity: 1;
+        }
+    }
+}
+
+.the-location {
+    text-align: center;
+}
+
+.ticket-content {
+    padding: rem(32px);
+
+    p+p {
+        margin-top: rem(16px);
+    }
+}
+
+.payment-options {
+    padding-top: rem(16px);
+
+    li {
+        text-align: center;
+        width: 75%;
+    }
+
+    a {
+        background-color: transparent;
+        color: $maroon;
+        display: block;
+        padding: rem(16px);
+        transition: filter 320ms, background-color 320ms;
+        filter: grayscale(100%);
+
+        &:hover,
+        &:focus {
+            color: $maroon;
+            filter: grayscale(0);
+            background-color: $white;
+
+            .icon-venmo {
+                color: $venmo;
+            }
+
+            .icon-cash-app {
+                color: $cashapp;
+            }
+        }
+    }
+
+    .icon {
+        height: rem(48px);
+        width: auto;
+        transition: color 320ms;
+
+        &.icon-venmo {
+            height: rem(32px);
+        }
+    }
+}
+
+.cool-grizzly {
+    position: absolute;
+    top: rem(48px);
+    right: rem(64px);
+    width: rem(280px);
+}
+
+footer {
+    margin: auto rem(32px) rem(32px) auto;
+    background-color: rgba($maroon, 0.1);
+    padding: rem(64px) rem(32px);
+}
