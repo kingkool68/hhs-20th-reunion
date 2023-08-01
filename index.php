@@ -142,7 +142,7 @@ $calendar_links = array(
             </section>
         </main>
 
-        <img src="assets/img/grizzly-bear-wearing-cool-sunglasses.png" alt="a grizzly bear wearing sunglasses" class="cool-grizzly">
+        <img src="assets/img/grizzly-bear-wearing-cool-sunglasses.png" alt="a grizzly bear wearing sunglasses" width="501" height="626" class="cool-grizzly">
 
         <footer><p>&copy;<?php echo date('Y'); ?><p></footer>
 
