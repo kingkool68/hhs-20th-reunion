@@ -52,6 +52,8 @@ $calendar_links = array(
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Hammond High Schools' 20th Reunion - October 7th, 2023</title>
+        <meta name="description" content="Join your former high school classmates from Hammond High school for 20 years of memories"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -121,9 +123,18 @@ $calendar_links = array(
                             <p>Includes appetizers and non-alcoholic beverages</p>
                             <p>Pay Russell Heimlich</p>
                             <ul class="payment-options">
-                                <li><a href="https://www.paypal.com/paypalme/kingkool68"><?php echo RH_SVG::get_icon( 'paypal' ); ?></a></li>
-                                <li><a href="https://venmo.com/u/kingkool68"><?php echo RH_SVG::get_icon( 'venmo' ); ?></a></li>
-                                <li><a href="https://cash.app/$kingkool68"><?php echo RH_SVG::get_icon( 'cash-app' ); ?></a></li>
+                                <li><a href="https://www.paypal.com/paypalme/kingkool68">
+                                    <span class="screen-reader-text">Pay for tickets using PayPal</span>
+                                    <?php echo RH_SVG::get_icon( 'paypal' ); ?>
+                                </a></li>
+                                <li><a href="https://venmo.com/u/kingkool68">
+                                    <span class="screen-reader-text">Pay for tickets using Venmo</span>
+                                    <?php echo RH_SVG::get_icon( 'venmo' ); ?>
+                                </a></li>
+                                <li><a href="https://cash.app/$kingkool68">
+                                    <span class="screen-reader-text">Pay for tickets using Cash App</span>
+                                    <?php echo RH_SVG::get_icon( 'cash-app' ); ?>
+                                </a></li>
                             </ul>
                         </div>
                     </div>
@@ -131,7 +142,7 @@ $calendar_links = array(
             </section>
         </main>
 
-        <img src="assets/img/grizzly-bear-wearing-cool-sunglasses.png" class="cool-grizzly">
+        <img src="assets/img/grizzly-bear-wearing-cool-sunglasses.png" alt="a grizzly bear wearing sunglasses" class="cool-grizzly">
 
         <footer><p>&copy;<?php echo date('Y'); ?><p></footer>
 
