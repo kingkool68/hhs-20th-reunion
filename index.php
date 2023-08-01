@@ -94,6 +94,8 @@ $calendar_links = array(
                     </div>
                     <div class="block-content">
                         <div class="the-location p-location h-card">
+                            <p>A private room at</p>
+                            <p>&nbsp;</p>
                             <p class="p-name"><a href="https://www.kelseysrestaurant.com/">Kelsey's Irish Pub</a></p>
                             <p class="p-street-address">8480 Baltimore National Pike</p>
                             <p>
