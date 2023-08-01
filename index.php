@@ -55,9 +55,6 @@ $calendar_links = array(
         <title>Hammond High Schools' 20th Reunion - October 7th, 2023</title>
         <meta name="description" content="Join your former high school classmates from Hammond High school for 20 years of memories"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Inter:wght@500;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/hammond-high-20th-reunion.min.css" type="text/css" media="all" />
 	</head>
 	<body class="h-event">
