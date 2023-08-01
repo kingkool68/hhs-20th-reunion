@@ -11,6 +11,8 @@ sans-serif;
 $sans-serif-font : 'Inter',
 sans-serif;
 
+$_breakpoint : em(960px);
+
 html {
     // background-color: $white;
     // background-color: #F2C203;
@@ -25,7 +27,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    margin: rem(32px);
+    padding: rem(32px);
     min-height: calc(100dvh - 64px);
 }
 
@@ -111,12 +113,21 @@ main {
     align-items: center;
     width: 100%;
 
+    @media( max-width: $_breakpoint ) {
+        flex-direction: column;
+        margin-bottom: rem(48px);
+    }
+
     >* {
         flex: 0 1 50%;
     }
 
     &.block--right {
         flex-direction: row-reverse;
+
+        @media( max-width: $_breakpoint ) {
+            flex-direction: column;
+        }
     }
 
     .block-label {
@@ -129,6 +140,12 @@ main {
 
         text-align: center;
         min-height: rem(500px);
+
+        @media( max-width: $_breakpoint ) {
+           min-height: auto;
+           padding: rem(32px);
+           margin-bottom: rem(16px);
+        }
 
         ::selection {
             background-color: $gold;
@@ -243,10 +260,19 @@ main {
     top: rem(48px);
     right: rem(64px);
     width: rem(280px);
+
+    @media( max-width: em(1250px) ) {
+        position: static;
+        margin: 0 auto rem(32px);
+    }
 }
 
 footer {
     margin: auto rem(32px) rem(32px) auto;
     background-color: rgba($maroon, 0.1);
     padding: rem(64px) rem(32px);
+
+    @media(max-width: em(660px)) {
+        margin: auto;
+    }
 }
